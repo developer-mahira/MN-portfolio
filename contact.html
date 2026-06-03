@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>Mahira Noor — Full Stack Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=Geist:wght@300;400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- NAV -->
+<nav>
+  <a href="index.html" class="nav-logo">MN<span>.</span></a>
+  <a href="contact.html" class="nav-btn">Hire Me →</a>
+</nav>
+    <!-- CONTACT -->
+<section>
+  <div class="contact-bg" id="contact">
+  <div class="section-wrap">
+    <div class="section-eyebrow">Get In Touch</div>
+    <h2 class="section-heading">Let's Work<br>Together</h2>
+    <div class="contact-layout">
+      <div class="contact-info reveal">
+        <div>
+          <p class="contact-info-heading">Have a project in mind?</p>
+          <p class="contact-info-sub" style="margin-top:0.5rem">Tell me what you're building and I'll get back to you within 24 hours. I'm open to freelance projects, agency collabs, and startup partnerships.</p>
+        </div>
+        <div class="contact-detail">
+          <!-- <div class="contact-detail-icon">✉️</div> -->
+          <div><div class="contact-detail-label">Email</div><div class="contact-detail-value"><a href="mailto:mahiranoor.088@gmail.com">mahiranoor.088@gmail.com</a></div></div>
+        </div>
+        <div class="contact-detail">
+          <!-- <div class="contact-detail-icon">💼</div> -->
+          <div><div class="contact-detail-label">LinkedIn</div><div class="contact-detail-value"><a href="http://www.linkedin.com/in/mahira-noor-developer08" target="_blank">mahira-noordeveloper08</a></div></div>
+        </div>
+        <div class="contact-detail">
+          <!-- <div class="contact-detail-icon">🐙</div> -->
+          <div><div class="contact-detail-label">GitHub</div><div class="contact-detail-value"><a href="https://github.com/developer-mahira" target="_blank">developer-mahira</a></div></div>
+        </div>
+        <div class="contact-detail">
+          <!-- <div class="contact-detail-icon">📍</div> -->
+          <div><div class="contact-detail-label">Location</div><div class="contact-detail-value">Karachi, Pakistan · Remote Friendly</div></div>
+        </div>
+        <div class="contact-note"><strong> Quick Response</strong> — I typically reply within 24 hours. For urgent projects, mention it in your message and I'll prioritize it.</div>
+      </div>
+
+      <div class="contact-form-wrap reveal reveal-d1">
+        <div id="contactForm">
+          <div class="form-row">
+            <div class="form-group" style="margin-bottom:0">
+              <label class="form-label">First Name</label>
+              <input type="text" class="form-input" placeholder="Mahira" id="fname">
+            </div>
+            <div class="form-group" style="margin-bottom:0">
+              <label class="form-label">Last Name</label>
+              <input type="text" class="form-input" placeholder="Noor" id="lname">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Email Address</label>
+            <input type="email" class="form-input" placeholder="mahiranoor.088@gmail.com" id="cemail">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Project Type</label>
+            <select class="form-select" id="ptype">
+              <option value="" disabled selected>Select a service...</option>
+              <option>Frontend Development</option>
+              <option>Full Stack Application</option>
+              <option>Figma to Code</option>
+              <option>Component System</option>
+              <option>Performance Optimization</option>
+              <option>Other / Not Sure Yet</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Budget Range</label>
+            <select class="form-select" id="budget">
+              <option value="" disabled selected>Approximate budget...</option>
+              <option>Under $500</option>
+              <option>$500 – $1,500</option>
+              <option>$1,500 – $5,000</option>
+              <option>$5,000+</option>
+              <option>Let's discuss</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Tell Me About Your Project</label>
+            <textarea class="form-textarea" placeholder="Describe what you need, your timeline, and any specific requirements..." id="message"></textarea>
+          </div>
+          <button class="form-submit" onclick="handleSubmit()">Send Message →</button>
+        </div>
+        <div class="form-success" id="formSuccess">
+          <!-- <div class="form-success-icon">🎉</div> -->
+          <div class="form-success-title">Message Sent!</div>
+          <p class="form-success-sub">Thank you for reaching out. I'll review your project details and get back to you within 24 hours.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<div class="cta-wrap" id="cta-bottom">
+  <div class="cta-inner">
+    <div class="cta-eyebrow">Ready to Start?</div>
+    <h2 class="cta-heading">Let's Build Something<br><em>You'll Be Proud Of</em></h2>
+    <p class="cta-sub">Whether it's a landing page, a full product, or something in between — I'm ready to help you ship it. Tell me about your project and I'll get back to you within 24 hours.</p>
+    <div class="cta-actions">
+      <a href="mailto:mahiranoor.088@gmail.com" class="btn btn-gold">Email Me Directly →</a>
+      <a href="http://www.linkedin.com/in/mahira-noor-developer08" target="_blank" class="btn btn-outline-white">LinkedIn ↗</a>
+    </div>
+    <p class="cta-contact-line">mahiranoor.088@gmail.com · Karachi, Pakistan · <a href="https://github.com/developer-mahira" target="_blank">github.com/developer-mahira</a></p>
+  </div>
+</div>
+<!-- FOOTER -->
+<footer>
+  <div class="footer-left">© 2026 Mahira Noor · All rights reserved</div>
+  <div class="footer-links">
+    <a href="http://www.linkedin.com/in/mahira-noor-developer08" target="_blank">LinkedIn</a>
+    <a href="https://github.com/developer-mahira" target="_blank">GitHub</a>
+    <a href="mailto:mahiranoor.088@gmail.com">Email</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script type="module">
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
+import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
+import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-analytics.js";
+
+// Firebase config
+const firebaseConfig = {
+  apiKey: "YOUR_API_KEY",
+  authDomain: "portfolio-cta-4016e.firebaseapp.com",
+  projectId: "portfolio-cta-4016e",
+  storageBucket: "portfolio-cta-4016e.firebasestorage.app",
+  messagingSenderId: "961842178753",
+  appId: "1:961842178753:web:7ed553e306a727f7320240",
+  measurementId: "G-TP1ENHD2EQ"
+};
+
+// Init Firebase
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
+getAnalytics(app);
+
+// Handle Submit
+window.handleSubmit = async function () {
+
+  const fname = document.getElementById('fname').value.trim();
+  const lname = document.getElementById('lname').value.trim();
+  const email = document.getElementById('cemail').value.trim();
+  const ptype = document.getElementById('ptype').value;
+  const budget = document.getElementById('budget').value;
+  const message = document.getElementById('message').value.trim();
+
+  if (!fname || !email || !message) {
+    alert("Please fill required fields");
+    return;
+  }
+
+  try {
+    await addDoc(collection(db, "contacts"), {
+      firstName: fname,
+      lastName: lname,
+      email: email,
+      projectType: ptype,
+      budget: budget,
+      message: message,
+      createdAt: new Date()
+    });
+
+    // UI update
+    document.getElementById('contactForm').style.display = 'none';
+    document.getElementById('formSuccess').style.display = 'block';
+
+  } catch (error) {
+    console.error("Error adding document: ", error);
+    alert("Something went wrong!");
+  }
+};
+
+</script>
+</body>
+</html>

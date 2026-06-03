@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+<title>Mahira Noor — Full Stack Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=Geist:wght@300;400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="nav-logo">MN<span>.</span></a>
+
+  <!-- Mobile hamburger -->
+  <button class="nav-toggle" type="button" aria-label="Open navigation menu" aria-controls="mobileMenu" aria-expanded="false">
+    <span class="nav-toggle-icon" aria-hidden="true">☰</span>
+  </button>
+
+  <!-- Desktop links -->
+  <ul class="nav-links" id="desktopNav">
+    <li><a href="#services" class="nav-link">Services</a></li>
+    <li><a href="#projects" class="nav-link">Work</a></li>
+    <li><a href="#process" class="nav-link">Process</a></li>
+    <li><a href="#experience" class="nav-link">Experience</a></li>
+    <li><a href="#contact" class="nav-link">Contact</a></li>
+  </ul>
+
+  <!-- Desktop Hire Me -->
+  <a href="contact.html" class="nav-btn nav-btn-desktop">Hire Me →</a>
+
+  <!-- Mobile drawer/menu -->
+  <div class="nav-mobile" id="mobileMenu" hidden>
+    <ul class="nav-mobile-links" aria-label="Mobile navigation">
+      <li><a href="#services" class="nav-link">Services</a></li>
+      <li><a href="#projects" class="nav-link">Work</a></li>
+      <li><a href="#process" class="nav-link">Process</a></li>
+      <li><a href="#experience" class="nav-link">Experience</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <a href="contact.html" class="nav-btn nav-btn-mobile">Hire Me →</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-left">
+    <div class="hero-avail"><span class="avail-dot"></span> Available for new projects</div>
+    <h1 class="hero-name">I Build Web<br>Apps That <em>Work.</em></h1>
+    <p class="hero-role">Frontend-Focused Full Stack Developer · React · Next.js · Firebase · Node.js</p>
+    <p class="hero-desc">I help startups, agencies, and small businesses ship clean, fast, and scalable web products from landing pages to full-stack applications. Based in Karachi, working globally.</p>
+    <div class="hero-actions">
+      <a href="#projects" class="btn btn-dark">See My Work →</a>
+      <a href="#contact" class="btn btn-ghost">Let's Talk</a>
+    </div>
+    <div class="hero-trust">
+      <span class="trust-text">Trusted stack</span>
+      <div class="trust-logos">
+        <span class="trust-badge">JavaScript</span>
+        <span class="trust-badge">React.js</span>
+        <span class="trust-badge">Next.js</span>
+        <span class="trust-badge">TypeScript</span>
+        <span class="trust-badge">Firebase</span>
+        <span class="trust-badge">Node.js</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-right">
+    <div class="hero-photo-card">
+      <div class="hero-photo-inner">
+        <svg width="52" height="52" viewBox="0 0 52 52" fill="none"><circle cx="26" cy="20" r="10" stroke="#9a9690" stroke-width="1.5"/><path d="M6 46c0-11.046 8.954-20 20-20s20 8.954 20 20" stroke="#9a9690" stroke-width="1.5" stroke-linecap="round"/></svg>
+        <span class="hero-photo-label"><img src="Heroimg.png" alt=""></span>
+      </div>
+    </div>
+    <div class="hero-stats-row">
+      <div class="hero-stat">
+        <div class="hero-stat-num">40<span>+</span></div>
+        <div class="hero-stat-label">Projects</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-num">3</div>
+        <div class="hero-stat-label">Internships</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-num">1<span>yr</span></div>
+        <div class="hero-stat-label">Experience</div>
+      </div>
+    </div>
+    <div class="hero-quote">
+      "Beautiful design means nothing if it doesn't perform, scale, and convert. so I build both."
+    </div>
+  </div>
+</div>
+
+<!-- MARQUEE -->
+<div class="marquee-wrap">
+  <div class="marquee">
+    <span class="marquee-item">React.js</span><span class="marquee-item">Next.js</span><span class="marquee-item">TypeScript</span><span class="marquee-item">Tailwind CSS</span><span class="marquee-item">Firebase</span><span class="marquee-item">Node.js</span><span class="marquee-item">MongoDB</span><span class="marquee-item">REST APIs</span><span class="marquee-item">GitHub OAuth</span><span class="marquee-item">Vercel</span><span class="marquee-item">Vite</span><span class="marquee-item">WCAG Accessibility</span><span class="marquee-item">Agile / Scrum</span><span class="marquee-item">Figma to Code</span><span class="marquee-item">React.js</span><span class="marquee-item">Next.js</span><span class="marquee-item">TypeScript</span><span class="marquee-item">Tailwind CSS</span><span class="marquee-item">Firebase</span><span class="marquee-item">Node.js</span><span class="marquee-item">MongoDB</span><span class="marquee-item">REST APIs</span><span class="marquee-item">GitHub OAuth</span><span class="marquee-item">Vercel</span><span class="marquee-item">Vite</span><span class="marquee-item">WCAG Accessibility</span><span class="marquee-item">Agile / Scrum</span><span class="marquee-item">Figma to Code</span>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<div class="services-bg" id="services">
+  <div class="section-wrap">
+    <div class="services-header">
+      <div>
+        <div class="section-eyebrow">What I Offer</div>
+        <h2 class="section-heading">Services Designed<br>for Real Businesses</h2>
+      </div>
+      <p class="section-sub">Whether you need a landing page launched this week or a full product built from scratch. I've got the stack and the process to deliver it right.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card reveal">
+        <div class="service-num">01</div>
+        <!-- <div class="service-icon"></div> -->
+        <div class="service-title">Frontend Development</div>
+        <p class="service-desc">Pixel-perfect, responsive interfaces built with React.js and Next.js. Fast, accessible, cross-browser tested. I turn designs into live products that feel great on any screen.</p>
+        <div class="service-chips"><span class="chip">React.js</span><span class="chip">Next.js</span><span class="chip">Tailwind CSS</span><span class="chip">TypeScript</span></div>
+      </div>
+      <div class="service-card reveal reveal-d1">
+        <div class="service-num">02</div>
+        <!-- <div class="service-icon">🔗</div> -->
+        <div class="service-title">Full Stack Applications</div>
+        <p class="service-desc">End-to-end web apps with auth, real-time databases, and RESTful APIs. Firebase and Node.js backends built to scale delivered production-ready, not prototype-ready.</p>
+        <div class="service-chips"><span class="chip">Node.js</span><span class="chip">Firebase</span><span class="chip">MongoDB</span><span class="chip">REST APIs</span></div>
+      </div>
+      <div class="service-card reveal reveal-d2">
+        <div class="service-num">03</div>
+        <!-- <div class="service-icon">🎨</div> -->
+        <div class="service-title">Figma to Code</div>
+        <p class="service-desc">I convert Figma designs into production-grade interfaces with pixel accuracy. WCAG accessibility standards, responsive layouts, and clean CSS. exactly as designed.</p>
+        <div class="service-chips"><span class="chip">Figma</span><span class="chip">HTML5/CSS3</span><span class="chip">WCAG</span><span class="chip">Responsive</span></div>
+      </div>
+      <div class="service-card reveal reveal-d1">
+        <div class="service-num">04</div>
+        <!-- <div class="service-icon">📦</div> -->
+        <div class="service-title">Component Systems</div>
+        <p class="service-desc">Reusable, maintainable React component libraries. Custom Hooks, TypeScript interfaces, and clean architecture that cuts development time by 30–40% on future features.</p>
+        <div class="service-chips"><span class="chip">React Hooks</span><span class="chip">TypeScript</span><span class="chip">Storybook</span></div>
+      </div>
+      <div class="service-card reveal reveal-d2">
+        <div class="service-num">05</div>
+        <!-- <div class="service-icon">🚀</div> -->
+        <div class="service-title">Performance Optimization</div>
+        <p class="service-desc">Lazy loading, code splitting, React.memo, and Lighthouse audits. I've cut initial load times by ~20% on real projects with measurable Core Web Vitals improvement.</p>
+        <div class="service-chips"><span class="chip">Vite</span><span class="chip">Lazy Loading</span><span class="chip">Lighthouse</span><span class="chip">Web Vitals</span></div>
+      </div>
+      <div class="service-card reveal reveal-d3">
+        <div class="service-num">06</div>
+        <!-- <div class="service-icon">🔐</div> -->
+        <div class="service-title">Auth & Integrations</div>
+        <p class="service-desc">Secure authentication flows GitHub OAuth, Google Sign-In, Firestore rules. Third-party API integrations handled cleanly, from Stripe to custom REST endpoints.</p>
+        <div class="service-chips"><span class="chip">Firebase Auth</span><span class="chip">GitHub OAuth</span><span class="chip">Supabase</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- PROJECTS -->
+<div class="projects-bg" id="projects">
+  <div class="section-wrap">
+    <div class="projects-header">
+      <div>
+        <div class="section-eyebrow">Selected Work</div>
+        <h2 class="section-heading">Real Projects,<br>Live in Production</h2>
+      </div>
+      <a href="https://github.com/developer-mahira" target="_blank" class="btn btn-ghost" style="height:fit-content">All on GitHub ↗</a>
+    </div>
+    <div class="projects-grid">
+
+      <div class="project-card reveal">
+        <div class="project-thumb t1">
+          <span class="project-thumb-label">MN Resume Builder — Live App</span>
+          <span class="project-live-badge">Live ↗</span>
+        </div>
+        <div class="project-body">
+          <div class="project-meta">
+            <span class="project-id">01 · Featured</span>
+            <div class="project-links-row">
+              <a href="https://mn-resume-builder-9pfx.vercel.app" target="_blank" class="plink">Demo ↗</a>
+              <a href="https://github.com/developer-mahira" target="_blank" class="plink">GitHub ↗</a>
+            </div>
+          </div>
+          <div class="project-name">MN Resume Builder</div>
+          <p class="project-desc">Full-stack resume builder with GitHub OAuth (Firebase Auth), live multi-template preview, cover letter generation, and localStorage persistence — no forced sign-in. Architected reusable form components with React Hooks. Users can build, preview, and download a complete resume in minutes.</p>
+          <div class="project-metric">↓ ~35% less UI code via reusable component architecture</div>
+          <div class="project-stack">
+            <span class="chip">React.js</span><span class="chip">Firebase Auth</span><span class="chip">GitHub OAuth</span><span class="chip">localStorage</span><span class="chip">Vercel</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card reveal reveal-d1">
+        <div class="project-thumb t2">
+          <span class="project-thumb-label">Campus Portal — Multi-module App</span>
+          <span class="project-live-badge">Live ↗</span>
+        </div>
+        <div class="project-body">
+          <div class="project-meta">
+            <span class="project-id">02</span>
+            <div class="project-links-row">
+              <a href="https://saylani-mass-it-hub-campus-portal.vercel.app" target="_blank" class="plink">Demo ↗</a>
+            </div>
+          </div>
+          <div class="project-name">Saylani Campus Management Portal</div>
+          <p class="project-desc">Multi-module platform with Lost & Found, Complaints, Volunteer Management, and Admin Panel. Dual Student/Admin RBAC. Built under hackathon conditions with real-time Firestore sync.</p>
+          <div class="project-metric">Hackathon build · Dual role access control</div>
+          <div class="project-stack"><span class="chip">React</span><span class="chip">TypeScript</span><span class="chip">Tailwind</span><span class="chip">Firebase</span></div>
+        </div>
+      </div>
+
+      <div class="project-card reveal reveal-d2">
+        <div class="project-thumb t3">
+          <span class="project-thumb-label">Budget Planner — Finance Tool</span>
+          <span class="project-live-badge">Live ↗</span>
+        </div>
+        <div class="project-body">
+          <div class="project-meta">
+            <span class="project-id">03</span>
+            <div class="project-links-row">
+              <a href="https://budget-planner-lovat.vercel.app" target="_blank" class="plink">Demo ↗</a>
+            </div>
+          </div>
+          <div class="project-name">Project Budget Planner</div>
+          <p class="project-desc">Responsive budget tracker with TypeScript interfaces, custom React Hooks, full CRUD, and CI-ready Git workflow. Strict type safety across all data models.</p>
+          <div class="project-metric">Full TypeScript · Custom Hooks · CI workflow</div>
+          <div class="project-stack"><span class="chip">React</span><span class="chip">TypeScript</span><span class="chip">Custom Hooks</span></div>
+        </div>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="project-thumb t4">
+          <span class="project-thumb-label">Client Dashboard — Vanilla JS</span>
+        </div>
+        <div class="project-body">
+          <div class="project-meta">
+            <span class="project-id">04</span>
+            <div class="project-links-row">
+              <a href="https://freelancer-client-dashboard-czxicpcl3-mahis-projects-6c63ef09.vercel.app/" target="_blank" class="plink">Demo ↗</a>
+            </div>
+          </div>
+          <div class="project-name">Freelancer Client Dashboard</div>
+          <p class="project-desc">Project management dashboard built with pure HTML, CSS, and Vanilla JS. localStorage-based persistence, CRUD operations, and a clean UI — zero framework overhead.</p>
+          <div class="project-metric">Vanilla JS · Zero dependencies · localStorage</div>
+          <div class="project-stack"><span class="chip">HTML5</span><span class="chip">CSS3</span><span class="chip">Vanilla JS</span></div>
+        </div>
+      </div>
+
+      <div class="project-card reveal reveal-d1">
+        <div class="project-thumb t5">
+          <span class="project-thumb-label">Dev Portfolio — Personal Site</span>
+        </div>
+        <div class="project-body">
+          <div class="project-meta">
+            <span class="project-id">05</span>
+            <div class="project-links-row">
+              <a href="#" target="_blank" class="plink">Demo↗</a>
+            </div>
+          </div>
+          <div class="project-name">Personal Developer Portfolio</div>
+          <p class="project-desc">Dark gold-accented portfolio site. Mobile-first responsive design, theme toggle, smooth nav, and hero layout — hand-coded in vanilla HTML/CSS/JS for maximum speed.</p>
+          <div class="project-metric">Mobile-first · Theme toggle · Vanilla stack</div>
+          <div class="project-stack"><span class="chip">HTML5</span><span class="chip">CSS3</span><span class="chip">JavaScript</span></div>
+        </div>
+      </div>
+
+      <div class="project-card reveal reveal-d2">
+        <div class="project-thumb t6">
+          <span class="project-thumb-label">CoffeeShop Ecommerce Platform</span>
+        </div>
+        <div class="project-body">
+          <div class="project-meta">
+            <span class="project-id">06</span>
+            <div class="project-links-row">
+              <a href="https://e-commerce-coffee-heaven.vercel.app" target="_blank" class="plink">Demo ↗</a>
+            </div>
+          </div>
+          <div class="project-name">CoffeeShop Ecommerce Platform</div>
+          <p class="project-desc">coffee shop website a high-level SaaS-style ecommerce platform using only HTML, CSS, and JavaScript. Fully featured with cart, wishlist, multi-step checkout, localStorage-based user & order management, advanced product filtering, responsive design, and dynamic UI components.</p>
+          <div class="project-metric">HTML · CSS3 · JavaScript · LocalStorage </div>
+          <div class="project-stack"><span class="chip">HTML</span><span class="chip">CSS3</span><span class="chip">JavaScript</span><span class="chip">LocalStorage</span></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- SOCIAL PROOF NUMBERS -->
+<div class="social-proof">
+  <div class="social-proof-inner">
+    <div class="proof-card reveal">
+      <div class="proof-num">40<span>+</span></div>
+      <div class="proof-label">Projects Shipped</div>
+      <div class="proof-desc">Across internships, freelance, and personal portfolio work</div>
+    </div>
+    <div class="proof-card reveal reveal-d1">
+      <div class="proof-num">~20<span>%</span></div>
+      <div class="proof-label">Load Time Saved</div>
+      <div class="proof-desc">Via React.memo, lazy loading & performance audits</div>
+    </div>
+    <div class="proof-card reveal reveal-d2">
+      <div class="proof-num">35<span>%</span></div>
+      <div class="proof-label">Less Code Written</div>
+      <div class="proof-desc">Through reusable component systems & custom hooks</div>
+    </div>
+    <div class="proof-card reveal reveal-d3">
+      <div class="proof-num">6<span>%</span></div>
+      <div class="proof-label">Live Products</div>
+      <div class="proof-desc">Deployed to Vercel with real users and full functionality</div>
+    </div>
+  </div>
+</div>
+
+<!-- PROCESS -->
+<div class="process-bg" id="process">
+  <div class="section-wrap">
+    <div class="section-eyebrow">How I Work</div>
+    <h2 class="section-heading">My Process — Simple,<br>Clear, and Reliable</h2>
+    <div class="process-steps">
+      <div class="step reveal">
+        <div class="step-num">01</div>
+        <!-- <div class="step-icon">🧠</div> -->
+        <div class="step-title">Discovery</div>
+        <p class="step-desc">I start by understanding your business, your users, and what success actually looks like. No assumptions — I ask the right questions before writing a single line of code.</p>
+      </div>
+      <div class="step reveal reveal-d1">
+        <div class="step-num">02</div>
+        <!-- <div class="step-icon">🗺️</div> -->
+        <div class="step-title">Plan & Architect</div>
+        <p class="step-desc">Tech stack selection, component structure, API design, and timeline. You get a clear plan with milestones — not vague promises.</p>
+      </div>
+      <div class="step reveal reveal-d2">
+        <div class="step-num">03</div>
+        <!-- <div class="step-icon">⚙️</div> -->
+        <div class="step-title">Build & Iterate</div>
+        <p class="step-desc">I build in focused sprints with regular check-ins. Agile workflow, transparent communication, and clean Git history throughout.</p>
+      </div>
+      <div class="step reveal reveal-d3">
+        <div class="step-num">04</div>
+        <!-- <div class="step-icon">🚀</div> -->
+        <div class="step-title">Launch & Support</div>
+        <p class="step-desc">Deployed to production, cross-browser tested, performance optimized. I stay available post-launch to ensure everything runs smoothly.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- WHY ME -->
+<div class="why-bg">
+  <div class="section-wrap">
+    <div class="section-eyebrow">Why Work With Me</div>
+    <h2 class="section-heading">What Makes Me<br>Different</h2>
+    <div class="why-grid">
+      <div class="why-card reveal">
+        <!-- <div class="why-icon">⚡</div> -->
+        <div><div class="why-title">I Build for Performance, Not Just Aesthetics</div><p class="why-desc">Every component I write considers load time, re-renders, and scalability. Beautiful interfaces that also score well on Core Web Vitals.</p></div>
+      </div>
+      <div class="why-card reveal reveal-d1">
+        <!-- <div class="why-icon">🎯</div> -->
+        <div><div class="why-title">Real Internship Experience Across 3 Companies</div><p class="why-desc">I've worked in real team environments — managing PRs, feature branches, client deliverables, and sprint cycles. Not just solo side projects.</p></div>
+      </div>
+      <div class="why-card reveal reveal-d2">
+        <!-- <div class="why-icon">🧩</div> -->
+        <div><div class="why-title">Frontend + Backend — Full Ownership</div><p class="why-desc">I can own the entire product layer — React frontend, Firebase backend, auth flow, API integration, and Vercel deployment. One developer, full accountability.</p></div>
+      </div>
+      <div class="why-card reveal reveal-d3">
+        <!-- <div class="why-icon">📐</div> -->
+        <div><div class="why-title">Clean Code That Your Next Developer Will Thank You For</div><p class="why-desc">TypeScript interfaces, reusable components, meaningful naming, and documented patterns. I write code your team can actually maintain and extend.</p></div>
+      </div>
+      <div class="why-card reveal">
+        <!-- <div class="why-icon">🌍</div> -->
+        <div><div class="why-title">Fast Communication, Every Time Zone</div><p class="why-desc">Based in Karachi — available for async collaboration with clients globally. Regular updates, clear timelines, and honest communication throughout every project.</p></div>
+      </div>
+      <div class="why-card reveal reveal-d1">
+        <!-- <div class="why-icon">📈</div> -->
+        <div><div class="why-title">I Think Like a Product Person, Not Just a Developer</div><p class="why-desc">I ask why before how. Understanding user needs and business goals leads to better technical decisions and products people actually want to use.</p></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SKILLS -->
+<div class="skills-bg" id="skills">
+  <div class="section-wrap">
+    <div class="section-eyebrow">Technical Stack</div>
+    <h2 class="section-heading">Skills & Technologies</h2>
+    <div class="skills-layout">
+      <div>
+        <div class="skill-group">
+          <div class="skill-group-title">Frontend</div>
+          <div class="skill-item"><span class="skill-name">React.js / Next.js</span><div class="skill-bar"><div class="skill-fill gold" style="width:92%"></div></div><span class="skill-pct">92%</span></div>
+          <div class="skill-item"><span class="skill-name">TypeScript</span><div class="skill-bar"><div class="skill-fill" style="width:80%"></div></div><span class="skill-pct">80%</span></div>
+          <div class="skill-item"><span class="skill-name">Tailwind CSS</span><div class="skill-bar"><div class="skill-fill gold" style="width:95%"></div></div><span class="skill-pct">95%</span></div>
+          <div class="skill-item"><span class="skill-name">JavaScript ES6+</span><div class="skill-bar"><div class="skill-fill" style="width:88%"></div></div><span class="skill-pct">88%</span></div>
+          <div class="skill-item"><span class="skill-name">HTML5 / CSS3</span><div class="skill-bar"><div class="skill-fill gold" style="width:97%"></div></div><span class="skill-pct">97%</span></div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group-title">Backend & Database</div>
+          <div class="skill-item"><span class="skill-name">Firebase / Firestore</span><div class="skill-bar"><div class="skill-fill" style="width:85%"></div></div><span class="skill-pct">85%</span></div>
+          <div class="skill-item"><span class="skill-name">Node.js / Express</span><div class="skill-bar"><div class="skill-fill" style="width:72%"></div></div><span class="skill-pct">72%</span></div>
+          <div class="skill-item"><span class="skill-name">MongoDB</span><div class="skill-bar"><div class="skill-fill" style="width:70%"></div></div><span class="skill-pct">70%</span></div>
+          <div class="skill-item"><span class="skill-name">REST API Design</span><div class="skill-bar"><div class="skill-fill" style="width:78%"></div></div><span class="skill-pct">78%</span></div>
+        </div>
+      </div>
+      <div>
+        <div class="skill-group-title">Full Technology Cloud</div>
+        <div class="tech-cloud">
+          <span class="tech-tag highlight">React.js</span>
+          <span class="tech-tag highlight">Next.js</span>
+          <span class="tech-tag highlight">Tailwind CSS</span>
+          <span class="tech-tag highlight">TypeScript</span>
+          <span class="tech-tag">Vue.js</span>
+          <span class="tech-tag">JavaScript ES6+</span>
+          <span class="tech-tag">HTML5</span>
+          <span class="tech-tag">CSS3</span>
+          <span class="tech-tag highlight">Firebase Auth</span>
+          <span class="tech-tag highlight">Firestore</span>
+          <span class="tech-tag">Supabase</span>
+          <span class="tech-tag">Node.js</span>
+          <span class="tech-tag">Express.js</span>
+          <span class="tech-tag">MongoDB</span>
+          <span class="tech-tag">REST APIs</span>
+          <span class="tech-tag">Git / GitHub</span>
+          <span class="tech-tag">Vite</span>
+          <span class="tech-tag">Webpack</span>
+          <span class="tech-tag">Jest</span>
+          <span class="tech-tag">React Testing Library</span>
+          <span class="tech-tag">Figma</span>
+          <span class="tech-tag">WCAG</span>
+          <span class="tech-tag">Agile / Scrum</span>
+          <span class="tech-tag">Vercel</span>
+          <span class="tech-tag">GitHub OAuth</span>
+          <span class="tech-tag">localStorage</span>
+          <span class="tech-tag">React Hooks</span>
+          <span class="tech-tag">React.memo</span>
+          <span class="tech-tag">Lazy Loading</span>
+          <span class="tech-tag">VS Code</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- EXPERIENCE -->
+<div class="exp-bg" id="experience">
+  <div class="section-wrap">
+    <div class="section-eyebrow">Career</div>
+    <h2 class="section-heading">Experience &<br>Education</h2>
+    <div class="exp-layout">
+      <div class="exp-sidebar">
+        <div class="exp-sidebar-title">In Numbers</div>
+        <div class="exp-sidebar-stat">
+          <div class="exp-sidebar-num">3</div>
+          <div class="exp-sidebar-label">Internships completed</div>
+        </div>
+        <div class="exp-sidebar-stat">
+          <div class="exp-sidebar-num">30<span>+</span></div>
+          <div class="exp-sidebar-label">Portfolio projects built</div>
+        </div>
+        <div class="exp-sidebar-stat">
+          <div class="exp-sidebar-num">1<span>yr</span></div>
+          <div class="exp-sidebar-label">Professional experience</div>
+        </div>
+        <div class="exp-sidebar-stat">
+          <div class="exp-sidebar-num">3</div>
+          <div class="exp-sidebar-label">Live Vercel deployments</div>
+        </div>
+      </div>
+
+      <div class="exp-list">
+        <div class="exp-item reveal">
+          <div class="exp-period">Feb 2026 — Mar 2026</div>
+          <div class="exp-role-name">Web Developer</div>
+          <div class="exp-company">Syntecxhub · Karachi</div>
+          <ul class="exp-list-items">
+            <li>Built and deployed responsive interfaces with React.js + Tailwind CSS, standardizing a shared component library to reduce layout inconsistencies across all breakpoints.</li>
+            <li>Integrated RESTful APIs connecting frontend UI with backend data, enabling real-time content updates across the application.</li>
+            <li>Applied React.memo and lazy loading strategies — achieved ~20% reduction in initial load time.</li>
+          </ul>
+          <div class="exp-tags"><span class="chip">React.js</span><span class="chip">Tailwind</span><span class="chip">REST APIs</span><span class="chip">Performance</span></div>
+        </div>
+
+        <div class="exp-item reveal">
+          <div class="exp-period">Dec 2025 — Jan 2026</div>
+          <div class="exp-role-name">Frontend Developer Intern</div>
+          <div class="exp-company">DevelopersHub Corporation</div>
+          <ul class="exp-list-items">
+            <li>Developed reusable React.js component systems across multiple client projects — reduced repetitive code by 30–40%.</li>
+            <li>Implemented responsive UI layouts with CSS3 and Tailwind CSS, improving mobile usability scores in testing.</li>
+            <li>Managed feature branches and pull requests in a team Git/GitHub workflow — real collaborative development.</li>
+          </ul>
+          <div class="exp-tags"><span class="chip">React.js</span><span class="chip">CSS3</span><span class="chip">Tailwind</span><span class="chip">Git</span></div>
+        </div>
+
+        <div class="exp-item reveal">
+          <div class="exp-period">Nov 2025 — Dec 2025</div>
+          <div class="exp-role-name">Frontend Developer Intern</div>
+          <div class="exp-company">Apexcify Technologies · Karachi</div>
+          <ul class="exp-list-items">
+            <li>Converted Figma designs into pixel-accurate, accessible HTML5/CSS3 interfaces aligned with WCAG standards.</li>
+            <li>Built interactive React.js components with JavaScript ES6+, shipping features across 3 full sprint cycles.</li>
+          </ul>
+          <div class="exp-tags"><span class="chip">Figma to Code</span><span class="chip">WCAG</span><span class="chip">React.js</span><span class="chip">Agile</span></div>
+        </div>
+
+        <div class="exp-item reveal">
+          <div class="exp-period">2025 — 2026 · Active</div>
+          <div class="exp-role-name">Web & App Development</div>
+          <div class="exp-company">Saylani Mass IT Training (SMIT)</div>
+          <ul class="exp-list-items">
+            <li>Full-stack web and app development curriculum covering MERN stack, React, Firebase, and modern deployment practices.</li>
+            <li>Hackathon participant — Indus AI Week 2K26 · Built and shipped real products under time pressure.</li>
+          </ul>
+          <div class="exp-tags"><span class="chip">MERN</span><span class="chip">Hackathon</span><span class="chip">Firebase</span></div>
+        </div>
+
+        <div class="exp-item reveal">
+          <div class="exp-period">Oct — Dec 2025</div>
+          <div class="exp-role-name">JavaScript, HTML & CSS Essentials</div>
+          <div class="exp-company">Cisco Networking Academy · Certified</div>
+          <ul class="exp-list-items">
+            <li>Completed JavaScript Essentials 1, HTML Essentials, and CSS Essentials — certified by Cisco Networking Academy.</li>
+          </ul>
+          <div class="exp-tags"><span class="chip">Cisco Certified</span><span class="chip">JavaScript</span><span class="chip">HTML/CSS</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CONTACT -->
+<div class="contact-bg" id="contact">
+  <div class="section-wrap">
+    <div class="section-eyebrow">Get In Touch</div>
+    <h2 class="section-heading">Let's Work<br>Together</h2>
+    <div class="contact-layout">
+      <div class="contact-info reveal">
+        <div>
+          <p class="contact-info-heading">Have a project in mind?</p>
+          <p class="contact-info-sub" style="margin-top:0.5rem">Tell me what you're building and I'll get back to you within 24 hours. I'm open to freelance projects, agency collabs, and startup partnerships.</p>
+        </div>
+        <div class="contact-detail">
+          <!-- <div class="contact-detail-icon">✉️</div> -->
+          <div><div class="contact-detail-label">Email</div><div class="contact-detail-value"><a href="mailto:mahiranoor.088@gmail.com">mahiranoor.088@gmail.com</a></div></div>
+        </div>
+        <div class="contact-detail">
+          <!-- <div class="contact-detail-icon">💼</div> -->
+          <div><div class="contact-detail-label">LinkedIn</div><div class="contact-detail-value"><a href="http://www.linkedin.com/in/mahira-noor-developer08" target="_blank">mahira-noordeveloper08</a></div></div>
+        </div>
+        <div class="contact-detail">
+          <!-- <div class="contact-detail-icon">🐙</div> -->
+          <div><div class="contact-detail-label">GitHub</div><div class="contact-detail-value"><a href="https://github.com/developer-mahira" target="_blank">developer-mahira</a></div></div>
+        </div>
+        <div class="contact-detail">
+          <!-- <div class="contact-detail-icon">📍</div> -->
+          <div><div class="contact-detail-label">Location</div><div class="contact-detail-value">Karachi, Pakistan · Remote Friendly</div></div>
+        </div>
+        <div class="contact-note"><strong> Quick Response</strong> — I typically reply within 24 hours. For urgent projects, mention it in your message and I'll prioritize it.</div>
+      </div>
+
+      <div class="contact-form-wrap reveal reveal-d1">
+        <div id="contactForm">
+          <div class="form-row">
+            <div class="form-group" style="margin-bottom:0">
+              <label class="form-label">First Name</label>
+              <input type="text" class="form-input" placeholder="Mahira" id="fname">
+            </div>
+            <div class="form-group" style="margin-bottom:0">
+              <label class="form-label">Last Name</label>
+              <input type="text" class="form-input" placeholder="Noor" id="lname">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Email Address</label>
+            <input type="email" class="form-input" placeholder="mahiranoor.088@gmail.com" id="cemail">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Project Type</label>
+            <select class="form-select" id="ptype">
+              <option value="" disabled selected>Select a service...</option>
+              <option>Frontend Development</option>
+              <option>Full Stack Application</option>
+              <option>Figma to Code</option>
+              <option>Component System</option>
+              <option>Performance Optimization</option>
+              <option>Other / Not Sure Yet</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Budget Range</label>
+            <select class="form-select" id="budget">
+              <option value="" disabled selected>Approximate budget...</option>
+              <option>Under $500</option>
+              <option>$500 – $1,500</option>
+              <option>$1,500 – $5,000</option>
+              <option>$5,000+</option>
+              <option>Let's discuss</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Tell Me About Your Project</label>
+            <textarea class="form-textarea" placeholder="Describe what you need, your timeline, and any specific requirements..." id="message"></textarea>
+          </div>
+          <button class="form-submit" onclick="handleSubmit()">Send Message →</button>
+        </div>
+        <div class="form-success" id="formSuccess">
+          <!-- <div class="form-success-icon">🎉</div> -->
+          <div class="form-success-title">Message Sent!</div>
+          <p class="form-success-sub">Thank you for reaching out. I'll review your project details and get back to you within 24 hours.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CTA -->
+<div class="cta-wrap" id="cta-bottom">
+  <div class="cta-inner">
+    <div class="cta-eyebrow">Ready to Start?</div>
+    <h2 class="cta-heading">Let's Build Something<br><em>You'll Be Proud Of</em></h2>
+    <p class="cta-sub">Whether it's a landing page, a full product, or something in between — I'm ready to help you ship it. Tell me about your project and I'll get back to you within 24 hours.</p>
+    <div class="cta-actions">
+      <a href="mailto:mahiranoor.088@gmail.com" class="btn btn-gold">Email Me Directly →</a>
+      <a href="http://www.linkedin.com/in/mahira-noor-developer08" target="_blank" class="btn btn-outline-white">LinkedIn ↗</a>
+    </div>
+    <p class="cta-contact-line">mahiranoor.088@gmail.com · Karachi, Pakistan · <a href="https://github.com/developer-mahira" target="_blank">github.com/developer-mahira</a></p>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-left">© 2026 Mahira Noor · All rights reserved</div>
+  <div class="footer-links">
+    <a href="http://www.linkedin.com/in/mahira-noor-developer08" target="_blank">LinkedIn</a>
+    <a href="https://github.com/developer-mahira" target="_blank">GitHub</a>
+    <a href="mailto:mahiranoor.088@gmail.com">Email</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script type="module">
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
+import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
+import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-analytics.js";
+
+// Firebase config
+const firebaseConfig = {
+  apiKey: "YOUR_API_KEY",
+  authDomain: "portfolio-cta-4016e.firebaseapp.com",
+  projectId: "portfolio-cta-4016e",
+  storageBucket: "portfolio-cta-4016e.firebasestorage.app",
+  messagingSenderId: "961842178753",
+  appId: "1:961842178753:web:7ed553e306a727f7320240",
+  measurementId: "G-TP1ENHD2EQ"
+};
+
+// Init Firebase
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
+getAnalytics(app);
+
+// Handle Submit
+window.handleSubmit = async function () {
+
+  const fname = document.getElementById('fname').value.trim();
+  const lname = document.getElementById('lname').value.trim();
+  const email = document.getElementById('cemail').value.trim();
+  const ptype = document.getElementById('ptype').value;
+  const budget = document.getElementById('budget').value;
+  const message = document.getElementById('message').value.trim();
+
+  if (!fname || !email || !message) {
+    alert("Please fill required fields");
+    return;
+  }
+
+  try {
+    await addDoc(collection(db, "contacts"), {
+      firstName: fname,
+      lastName: lname,
+      email: email,
+      projectType: ptype,
+      budget: budget,
+      message: message,
+      createdAt: new Date()
+    });
+
+    // UI update
+    document.getElementById('contactForm').style.display = 'none';
+    document.getElementById('formSuccess').style.display = 'block';
+
+  } catch (error) {
+    console.error("Error adding document: ", error);
+    alert("Something went wrong!");
+  }
+};
+
+</script>
+</body>
+</html> 
