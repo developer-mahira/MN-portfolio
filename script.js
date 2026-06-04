@@ -1,12 +1,3 @@
-function handleSubmit(){
-  const fname = document.getElementById('fname').value.trim();
-  const email = document.getElementById('cemail').value.trim();
-  const message = document.getElementById('message').value.trim();
-  if(!fname || !email || !message){ alert('Please fill in your name, email, and message.'); return; }
-  document.getElementById('contactForm').style.display = 'none';
-  document.getElementById('formSuccess').style.display = 'block';
-}
-
 const obs = new IntersectionObserver(entries => {
   entries.forEach(e => {
     if(e.isIntersecting){ e.target.classList.add('up'); obs.unobserve(e.target); }
@@ -31,19 +22,24 @@ window.addEventListener('scroll', () => {
   function setMenuOpen(isOpen) {
     if (!toggleBtn || !mobileMenu) return;
 
+    // Body scroll lock
     if (isOpen) {
+      document.body.classList.add('nav-open');
       mobileMenu.hidden = false;
       mobileMenu.classList.add('is-open');
       toggleBtn.setAttribute('aria-expanded', 'true');
     } else {
       mobileMenu.classList.remove('is-open');
       toggleBtn.setAttribute('aria-expanded', 'false');
+      document.body.classList.remove('nav-open');
       // after transition, actually hide
       setTimeout(() => {
-        mobileMenu.hidden = true;
-      }, 220);
+        // Only hide if it's still closed
+        if (!mobileMenu.classList.contains('is-open')) mobileMenu.hidden = true;
+      }, 260);
     }
   }
+
 
   if (toggleBtn && mobileMenu) {
     toggleBtn.addEventListener('click', () => {
@@ -56,9 +52,17 @@ window.addEventListener('scroll', () => {
       if (e.key === 'Escape') setMenuOpen(false);
     });
 
+    // Close on resize (prevents stale open state on breakpoint changes)
+    window.addEventListener('resize', () => {
+      if (!mobileMenu.classList.contains('is-open')) return;
+      if (window.innerWidth > 900) setMenuOpen(false);
+    });
+
     // Close when clicking a link (mobile)
     [...mobileLinks].forEach((link) => {
-      link.addEventListener('click', () => setMenuOpen(false));
+      link.addEventListener('click', () => {
+        setMenuOpen(false);
+      });
     });
   }
 
@@ -97,4 +101,3 @@ window.addEventListener('scroll', () => {
 
   sections.forEach((s) => sectionObserver.observe(s));
 })();
-

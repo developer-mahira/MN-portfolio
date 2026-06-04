@@ -6,7 +6,7 @@
     <title>Mahira Noor — Full Stack Developer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=Geist:wght@300;400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- NAV -->
@@ -125,63 +125,6 @@
 </footer>
 
 <script src="script.js"></script>
-<script type="module">
-import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
-import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
-import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-analytics.js";
-
-// Firebase config
-const firebaseConfig = {
-  apiKey: "YOUR_API_KEY",
-  authDomain: "portfolio-cta-4016e.firebaseapp.com",
-  projectId: "portfolio-cta-4016e",
-  storageBucket: "portfolio-cta-4016e.firebasestorage.app",
-  messagingSenderId: "961842178753",
-  appId: "1:961842178753:web:7ed553e306a727f7320240",
-  measurementId: "G-TP1ENHD2EQ"
-};
-
-// Init Firebase
-const app = initializeApp(firebaseConfig);
-const db = getFirestore(app);
-getAnalytics(app);
-
-// Handle Submit
-window.handleSubmit = async function () {
-
-  const fname = document.getElementById('fname').value.trim();
-  const lname = document.getElementById('lname').value.trim();
-  const email = document.getElementById('cemail').value.trim();
-  const ptype = document.getElementById('ptype').value;
-  const budget = document.getElementById('budget').value;
-  const message = document.getElementById('message').value.trim();
-
-  if (!fname || !email || !message) {
-    alert("Please fill required fields");
-    return;
-  }
-
-  try {
-    await addDoc(collection(db, "contacts"), {
-      firstName: fname,
-      lastName: lname,
-      email: email,
-      projectType: ptype,
-      budget: budget,
-      message: message,
-      createdAt: new Date()
-    });
-
-    // UI update
-    document.getElementById('contactForm').style.display = 'none';
-    document.getElementById('formSuccess').style.display = 'block';
-
-  } catch (error) {
-    console.error("Error adding document: ", error);
-    alert("Something went wrong!");
-  }
-};
-
-</script>
+<script src="firebase.js" type="module"></script>
 </body>
 </html>
