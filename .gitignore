@@ -1,0 +1,15 @@
+# Environment Variables (Keep confidential - NEVER commit to public repository)
+.env
+.env.local
+.env.*.local
+
+# Build artifacts & logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+
+# System & Editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

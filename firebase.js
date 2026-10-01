@@ -1,17 +1,18 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
 import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
 import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-analytics.js";
+import { env } from "./env.js";
 
-// Firebase config
+// Firebase config loaded securely from environment configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyBw8HBTT9pFJv6-rEEjibSvwHPpNWJaHB0",
-    authDomain: "mn-portfiolio.firebaseapp.com",
-    projectId: "mn-portfiolio",
-    storageBucket: "mn-portfiolio.firebasestorage.app",
-    messagingSenderId: "80517558958",
-    appId: "1:80517558958:web:7f7372eaf2caa0b7eef33f",
-    measurementId: "G-SGDRFV8517"
-  };
+    apiKey: env.FIREBASE_API_KEY,
+    authDomain: env.FIREBASE_AUTH_DOMAIN,
+    projectId: env.FIREBASE_PROJECT_ID,
+    storageBucket: env.FIREBASE_STORAGE_BUCKET,
+    messagingSenderId: env.FIREBASE_MESSAGING_SENDER_ID,
+    appId: env.FIREBASE_APP_ID,
+    measurementId: env.FIREBASE_MEASUREMENT_ID
+};
 
 // Init Firebase
 const app = initializeApp(firebaseConfig);
